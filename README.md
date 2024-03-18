@@ -11,7 +11,7 @@
 
 ## Description
 
-This Express.js app is the backend of an e-commerce site which has been configured to use Sequelize to interact with a MySQL database. Users can send HTTP Requests that will allow them to either Create, Review, Update, or Delete specific data.
+This Express.js app is the backend of an e-commerce site which has been configured to use Sequelize to interact with a MySQL database. Users can send HTTP Requests that will allow them to either Create, Read, Update, or Delete specific data.
 
 ### Demo
 
