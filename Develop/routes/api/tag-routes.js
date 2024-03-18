@@ -26,7 +26,7 @@ router.get("/:id", async (req, res) => {
     if (tagDatabyId) {
       res.status(200).json(tagDatabyId);
     } else {
-      res.status(404).json({ message: "No user with this id!" });
+      res.status(404).json({ message: "No tag with this id!" });
       return;
     }
   } catch (e) {
@@ -38,7 +38,7 @@ router.post("/", async (req, res) => {
   // create a new tag
   try {
     const tagCreate = await Tag.create({
-      name: req.body.name,
+      tag_name: req.body.tag_name,
     });
     res.status(200).json(tagCreate);
   } catch (e) {

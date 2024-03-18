@@ -28,7 +28,7 @@ router.get("/:id", async (req, res) => {
     if (productDatabyId) {
       res.status(200).json(productDatabyId);
     } else {
-      res.status(404).json({ message: "No user with this id!" });
+      res.status(404).json({ message: "No product with this id!" });
       return;
     }
   } catch (e) {
